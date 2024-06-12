@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>악성민원</title>
+    <style>
+
+         /* 텍스트를 순서대로 써지는 애니메이션 효과 */
+        @keyframes typing {
+            from {
+                width: 0; /* 초기에는 텍스트가 안 보이도록 설정 */
+            }
+            to {
+                width: 100%; /* 전체 텍스트를 보여줌 */
+            }
+        }
+
+        /* 애니메이션 효과 적용 */
+        #section5 p {
+            overflow: hidden; /* 텍스트 오버플로우 숨김 */
+            animation: typing 5s steps(10, end); /* 4초 동안 애니메이션 수행 */
+        }
+
+
+
+        .hover-scale:hover {
+            transform: scale(1.2); /* 1.2배 확대 */
+            transition: transform 0.3s; /* 변화를 부드럽게 만드는 0.3초의 전환 효과 */
+        }
+
+            @keyframes blink {
+            0% { opacity: 0.3; }
+            30% { opacity: 0.5; }
+            50% { opacity: 0.2; }
+            70% { opacity: 0.6; }
+            100% { opacity: 0.4; }
+        }
+
+        .blinking-image {
+            animation: blink 0.8s infinite; /* 1초마다 반복 */
+        }
+
+
+
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        section {
+            margin-top: 20px; /* 상단 패딩 */
+            margin-bottom: 20px; /* 하단 패딩 */
+            background-color: #f1f1f1; /* 배경색 */
+            padding: 20px; /* 내부 여백 */
+        }
+
+
+    
+        body 
+
+
+        {background-color: black;
+        color: white; /* 기본 글씨 색깔을 흰색으로 설정 */
+        text-align: center;}
+
+        /* 텍스트 사이즈 지정 */
+        h1 {
+            font-size: 150px; /* h1 태그 글씨 크기 */
+            color: white; /* 글씨 색깔 */
+            text-align: center;
+            padding-top: 300px;padding-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 60px; /* h2 태그 글씨 크기 */
+            color:  white; /* 글씨 색깔 */
+            text-align: center;
+            padding-top: 300px;padding-bottom: 20px;
+        }
+
+        h7 {font-size: 60px; /* h2 태그 글씨 크기 */
+            color:  white; /* 글씨 색깔 */
+            text-align: left;
+            padding-top: 20px;padding-bottom: 20px;}
+
+
+
+
+
+        p {
+            font-size: 28px; /* p 태그 글씨 크기 */
+            color: white; /* 글씨 색깔 */
+            text-align: center;
+            line-height: 1.5;
+            padding-top: 20px;
+        }
+        p7 {
+            font-size: 28px; /* p 태그 글씨 크기 */
+            color: white; /* 글씨 색깔 */
+            text-align: left;
+            line-height: 1.5;
+            padding-top: 20px;
+        }
+
+        p8 {
+            font-size: 28px; /* p 태그 글씨 크기 */
+            color: white; /* 글씨 색깔 */
+            text-align: center;
+            line-height: 1.5;
+            padding-top: 80px;padding-bottom: 80px;}
+
+        /* 네비게이션 바 스타일 */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Pretendard-Regular', sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+
+        section6{background-color: red;}
+
+        .navbar span {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        /* 이미지 컨테이너 스타일 */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        /* 이미지 스타일 */
+        .image-container img {
+            width: calc(33.33% - 20px);
+            height: auto;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            filter: grayscale(100%);
+        }
+
+        /* 마우스 오버 시 이미지 확대 및 회전 효과 */
+        .image-container img:hover {
+            transform: scale(1.5) rotate(5deg);
+            filter: grayscale(0%);
+        }
+
+        /* 섹션 스타일 */
+
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: left;
+            padding: 80px;
+            background-color: black;
+            border-top: 1px solid #ccc;
+            width: 100%;
+            bottom: 0;
+            line-height: 1.5;
+        }
+
+        .spaced-text {
+            word-spacing:word-spacing: 10px; /* 간격 조절 */}
+
+        .footerpowerbold {
+            font-weight: bold; font-size:30px; padding-bottom: 30px;}
+        .footerbold {
+            font-weight: bold; font-size:30px; padding-top: 30px;}
+        .footerregular {
+            font-weight: regular;font-size:20px;}
+        .footerregularcenter {
+            font-weight: regular;font-size:18px;text-align: center;padding-top: 80px;padding-bottom: 20px;}
+    
+
+
+    </style>
+</head>
+<body>
+     
+    <div class="navbar">
+        <div>악성민원</div>
+        <div>
+            <span>실태</span>
+            <span>발현형태</span>
+            <span>문제점</span>
+            <span>해결방안</span>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="01.png" alt="01.png">
+        <img src="02.png" alt="02.png">
+        <img src="04.png" alt="04.png">
+        <img src="05.png" alt="05.png">
+        <img src="06.png" alt="06.png">
+        <img src="07.png" alt="07.png">
+    </div>
+    
+
+    <section2 class="backgroundgray">
+       
+        <h1>김포시 공무원A씨,<br> 악성민원에 시달려 <br> 극단적 선택</h1>
+        <img class="blinking-image" src="1.3.png" alt="1.3.png">
+
+    </section2>
+
+    <section3>
+        <h2>악성민원 발현 형태</h2>
+        <img src="2.1.png" alt="2.1.png"class="hover-scale">
+        <img src="2.2.png" alt="2.2.png"class="hover-scale">
+        <img src="2.3.png" alt="2.3.png"class="hover-scale">
+        <img src="2.4.png" alt="2.4.png" class="hover-scale">
+        <p> 이 악성민원들은 그 형태는 다르지만 공무원의 신체와 정신에 심각한 악영향을 끼치고, <br>국가행정력도 저하시키며 나아가 정상적인 민원처리에도 지장을 초래함으로써 국민 전체에 피해를 준다. <br>여러 사례와 통계는 우리의 악성민원이 위험 수위에 이르렀음을 경고하고 있다.</p>
+    </section3>
+
+    <section4>
+        <h1>한 사람이 4년 간 민원<br> 7천건...“못 살겠다”<br> 담당 공무원 5명 퇴직</h1>
+        <img src="4.1.png" alt="4.1.png">
+    </section4>
+
+     <div id="section5">
+        
+        <!-- 순서대로 써지는 텍스트 -->
+        <h2>김영식(가명)근로감독관이었던<br>고인을 고소한 민원인과의 인터뷰 中 </h2>
+        <img src="5.1.png" alt="5.1.png">
+        <p>“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.”“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.”“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.“저 때문에 죽었다고 생각하기에는 좀 그렇죠. 미안하거나 뭐 그런 감정은 전혀 없어요.그 사람 순직이 인정되면 저는 고의로 그 사람을 악성민원넣어서 죽을 만큼 괴롭힌 살인자가 되는 거잖아요.</p></div>
+
+
+
+    </section5>
+
+    <section6 style="background-color: red;">
+        <h1>"뚝"</h1>  
+    </section6>
+
+    <section7>
+        <h2>이젠 듣지말고<br>끊어버리세요<br></h2>
+        <p>정부는 악성민원이 발생하지 않도록 사전에 예방하고, 악성민원이 발생할 경우 조기에 차단하기로 했다.<br>전화, 인터넷 등 민원신청 수단별로 악성민원 차단 장치도 마련한다. 민원인이 욕설, 협박, 성희롱 등 폭언을 <br>하거나 정당한 사유 없이 장시간 통화하는 경우 민원공무원이 전화를 끊을 수 있도록 조치할 예정이다.<br></p>
+        <p>2024. 5. 2<br></p>
+        <img src="7.1.png" alt="7.1.png">
+    </section7>
+
+
+
+     <footer class="spaced-text">
+        <div class="footerpowerbold">악성민원<br></div>
+        <div class="footerbold">index<br></div>
+        <div class="footerregular">실태   발현형태   문제점   해결방안<br></div>
+        <div class="footerbold">email<br></div>
+        <div class="footerregular">0919sa@naver.com   00919ksa@gmail.com<br></div>
+
+        <div class="footerregularcenter">©2024김슬아</div>
+    </footer>
+
+    
+
+
+
+</body>
+</html>
+
+
